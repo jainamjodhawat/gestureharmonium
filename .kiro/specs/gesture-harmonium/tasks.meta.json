@@ -1,0 +1,387 @@
+{
+  "pbtResults": {},
+  "executionHistory": {
+    "1. Scaffold the Vite + React + TypeScript project with Tailwind CSS and install dependencies": [
+      {
+        "executionId": "2e4cec68-80e4-4318-b1ec-7e4902323464",
+        "chatSessionId": "sess_9484265b-23c0-45cc-b231-2b75cd8ab232",
+        "timestamp": 1786388469896
+      },
+      {
+        "executionId": "2e4cec68-80e4-4318-b1ec-7e4902323464",
+        "chatSessionId": "sess_9484265b-23c0-45cc-b231-2b75cd8ab232",
+        "timestamp": 1786388484156
+      },
+      {
+        "executionId": "2e4cec68-80e4-4318-b1ec-7e4902323464",
+        "chatSessionId": "sess_9484265b-23c0-45cc-b231-2b75cd8ab232",
+        "timestamp": 1786389639589
+      }
+    ],
+    "2.1 Create `src/types.ts` with all shared contracts": [
+      {
+        "executionId": "2e4cec68-80e4-4318-b1ec-7e4902323464",
+        "chatSessionId": "sess_9484265b-23c0-45cc-b231-2b75cd8ab232",
+        "timestamp": 1786388470034
+      },
+      {
+        "executionId": "2e4cec68-80e4-4318-b1ec-7e4902323464",
+        "chatSessionId": "sess_9484265b-23c0-45cc-b231-2b75cd8ab232",
+        "timestamp": 1786388488996
+      },
+      {
+        "executionId": "2e4cec68-80e4-4318-b1ec-7e4902323464",
+        "chatSessionId": "sess_9484265b-23c0-45cc-b231-2b75cd8ab232",
+        "timestamp": 1786389732936
+      }
+    ],
+    "3.1 Implement `normYToMidi`, `midiToHz`, `euclidean2D`, `normalisePalmSpread`, `ema`": [
+      {
+        "executionId": "2e4cec68-80e4-4318-b1ec-7e4902323464",
+        "chatSessionId": "sess_9484265b-23c0-45cc-b231-2b75cd8ab232",
+        "timestamp": 1786388470097
+      },
+      {
+        "executionId": "2e4cec68-80e4-4318-b1ec-7e4902323464",
+        "chatSessionId": "sess_9484265b-23c0-45cc-b231-2b75cd8ab232",
+        "timestamp": 1786389746670
+      },
+      {
+        "executionId": "2e4cec68-80e4-4318-b1ec-7e4902323464",
+        "chatSessionId": "sess_9484265b-23c0-45cc-b231-2b75cd8ab232",
+        "timestamp": 1786389876434
+      }
+    ],
+    "3.2 Implement `deriveSynthParams(result: HandTrackingResult): SynthParams`": [
+      {
+        "executionId": "2e4cec68-80e4-4318-b1ec-7e4902323464",
+        "chatSessionId": "sess_9484265b-23c0-45cc-b231-2b75cd8ab232",
+        "timestamp": 1786388470152
+      },
+      {
+        "executionId": "2e4cec68-80e4-4318-b1ec-7e4902323464",
+        "chatSessionId": "sess_9484265b-23c0-45cc-b231-2b75cd8ab232",
+        "timestamp": 1786389884362
+      },
+      {
+        "executionId": "2e4cec68-80e4-4318-b1ec-7e4902323464",
+        "chatSessionId": "sess_9484265b-23c0-45cc-b231-2b75cd8ab232",
+        "timestamp": 1786390055606
+      }
+    ],
+    "4.1 Scaffold hook interface: exports `resultRef`, `status`, `errorMessage`, `start`, `stop`, `setSmoothingAlpha`": [
+      {
+        "executionId": "2e4cec68-80e4-4318-b1ec-7e4902323464",
+        "chatSessionId": "sess_9484265b-23c0-45cc-b231-2b75cd8ab232",
+        "timestamp": 1786388470201
+      },
+      {
+        "executionId": "2e4cec68-80e4-4318-b1ec-7e4902323464",
+        "chatSessionId": "sess_9484265b-23c0-45cc-b231-2b75cd8ab232",
+        "timestamp": 1786389885392
+      },
+      {
+        "executionId": "2e4cec68-80e4-4318-b1ec-7e4902323464",
+        "chatSessionId": "sess_9484265b-23c0-45cc-b231-2b75cd8ab232",
+        "timestamp": 1786390056610
+      }
+    ],
+    "4.2 Implement `start()`: dynamic import of `@mediapipe/hands` and `@mediapipe/camera_utils`, construct `Hands` with correct options, attach `onResults`, start `Camera` at 640×480": [
+      {
+        "executionId": "2e4cec68-80e4-4318-b1ec-7e4902323464",
+        "chatSessionId": "sess_9484265b-23c0-45cc-b231-2b75cd8ab232",
+        "timestamp": 1786388470254
+      },
+      {
+        "executionId": "2e4cec68-80e4-4318-b1ec-7e4902323464",
+        "chatSessionId": "sess_9484265b-23c0-45cc-b231-2b75cd8ab232",
+        "timestamp": 1786390065376
+      },
+      {
+        "executionId": "2e4cec68-80e4-4318-b1ec-7e4902323464",
+        "chatSessionId": "sess_9484265b-23c0-45cc-b231-2b75cd8ab232",
+        "timestamp": 1786390558630
+      }
+    ],
+    "4.3 Implement `handleResults(results)`: validation, EMA smoothing, and writing to `resultRef`": [
+      {
+        "executionId": "2e4cec68-80e4-4318-b1ec-7e4902323464",
+        "chatSessionId": "sess_9484265b-23c0-45cc-b231-2b75cd8ab232",
+        "timestamp": 1786388470303
+      },
+      {
+        "executionId": "2e4cec68-80e4-4318-b1ec-7e4902323464",
+        "chatSessionId": "sess_9484265b-23c0-45cc-b231-2b75cd8ab232",
+        "timestamp": 1786390066146
+      },
+      {
+        "executionId": "2e4cec68-80e4-4318-b1ec-7e4902323464",
+        "chatSessionId": "sess_9484265b-23c0-45cc-b231-2b75cd8ab232",
+        "timestamp": 1786390559661
+      }
+    ],
+    "4.4 Implement `stop()`, `setSmoothingAlpha()`, and cleanup `useEffect`": [
+      {
+        "executionId": "2e4cec68-80e4-4318-b1ec-7e4902323464",
+        "chatSessionId": "sess_9484265b-23c0-45cc-b231-2b75cd8ab232",
+        "timestamp": 1786388470356
+      },
+      {
+        "executionId": "2e4cec68-80e4-4318-b1ec-7e4902323464",
+        "chatSessionId": "sess_9484265b-23c0-45cc-b231-2b75cd8ab232",
+        "timestamp": 1786390574730
+      },
+      {
+        "executionId": "2e4cec68-80e4-4318-b1ec-7e4902323464",
+        "chatSessionId": "sess_9484265b-23c0-45cc-b231-2b75cd8ab232",
+        "timestamp": 1786392460142
+      }
+    ],
+    "4.5 Add frame timeout guard (50 ms) in `onFrame` callback": [
+      {
+        "executionId": "2e4cec68-80e4-4318-b1ec-7e4902323464",
+        "chatSessionId": "sess_9484265b-23c0-45cc-b231-2b75cd8ab232",
+        "timestamp": 1786388470406
+      },
+      {
+        "executionId": "2e4cec68-80e4-4318-b1ec-7e4902323464",
+        "chatSessionId": "sess_9484265b-23c0-45cc-b231-2b75cd8ab232",
+        "timestamp": 1786390576893
+      },
+      {
+        "executionId": "2e4cec68-80e4-4318-b1ec-7e4902323464",
+        "chatSessionId": "sess_9484265b-23c0-45cc-b231-2b75cd8ab232",
+        "timestamp": 1786392459229
+      }
+    ],
+    "5.1 Build the Tone.js signal chain in `start()`": [
+      {
+        "executionId": "2e4cec68-80e4-4318-b1ec-7e4902323464",
+        "chatSessionId": "sess_9484265b-23c0-45cc-b231-2b75cd8ab232",
+        "timestamp": 1786388470456
+      },
+      {
+        "executionId": "2e4cec68-80e4-4318-b1ec-7e4902323464",
+        "chatSessionId": "sess_9484265b-23c0-45cc-b231-2b75cd8ab232",
+        "timestamp": 1786389886293
+      },
+      {
+        "executionId": "2e4cec68-80e4-4318-b1ec-7e4902323464",
+        "chatSessionId": "sess_9484265b-23c0-45cc-b231-2b75cd8ab232",
+        "timestamp": 1786390057622
+      }
+    ],
+    "5.2 Implement `updateParams(params: SynthParams)`": [
+      {
+        "executionId": "2e4cec68-80e4-4318-b1ec-7e4902323464",
+        "chatSessionId": "sess_9484265b-23c0-45cc-b231-2b75cd8ab232",
+        "timestamp": 1786388470507
+      },
+      {
+        "executionId": "2e4cec68-80e4-4318-b1ec-7e4902323464",
+        "chatSessionId": "sess_9484265b-23c0-45cc-b231-2b75cd8ab232",
+        "timestamp": 1786390066971
+      },
+      {
+        "executionId": "2e4cec68-80e4-4318-b1ec-7e4902323464",
+        "chatSessionId": "sess_9484265b-23c0-45cc-b231-2b75cd8ab232",
+        "timestamp": 1786390560762
+      }
+    ],
+    "5.3 Implement `stop()` and `setEnvelopeParams()`": [
+      {
+        "executionId": "2e4cec68-80e4-4318-b1ec-7e4902323464",
+        "chatSessionId": "sess_9484265b-23c0-45cc-b231-2b75cd8ab232",
+        "timestamp": 1786388470613
+      },
+      {
+        "executionId": "2e4cec68-80e4-4318-b1ec-7e4902323464",
+        "chatSessionId": "sess_9484265b-23c0-45cc-b231-2b75cd8ab232",
+        "timestamp": 1786390575694
+      },
+      {
+        "executionId": "2e4cec68-80e4-4318-b1ec-7e4902323464",
+        "chatSessionId": "sess_9484265b-23c0-45cc-b231-2b75cd8ab232",
+        "timestamp": 1786392384212
+      }
+    ],
+    "6.1 Create `src/components/CameraView.tsx`": [
+      {
+        "executionId": "2e4cec68-80e4-4318-b1ec-7e4902323464",
+        "chatSessionId": "sess_9484265b-23c0-45cc-b231-2b75cd8ab232",
+        "timestamp": 1786388470666
+      },
+      {
+        "executionId": "2e4cec68-80e4-4318-b1ec-7e4902323464",
+        "chatSessionId": "sess_9484265b-23c0-45cc-b231-2b75cd8ab232",
+        "timestamp": 1786390067731
+      },
+      {
+        "executionId": "2e4cec68-80e4-4318-b1ec-7e4902323464",
+        "chatSessionId": "sess_9484265b-23c0-45cc-b231-2b75cd8ab232",
+        "timestamp": 1786390561505
+      }
+    ],
+    "6.2 Create `src/components/LandmarkOverlay.tsx`": [
+      {
+        "executionId": "2e4cec68-80e4-4318-b1ec-7e4902323464",
+        "chatSessionId": "sess_9484265b-23c0-45cc-b231-2b75cd8ab232",
+        "timestamp": 1786388470714
+      },
+      {
+        "executionId": "2e4cec68-80e4-4318-b1ec-7e4902323464",
+        "chatSessionId": "sess_9484265b-23c0-45cc-b231-2b75cd8ab232",
+        "timestamp": 1786390068607
+      },
+      {
+        "executionId": "2e4cec68-80e4-4318-b1ec-7e4902323464",
+        "chatSessionId": "sess_9484265b-23c0-45cc-b231-2b75cd8ab232",
+        "timestamp": 1786390562358
+      }
+    ],
+    "6.3 Create `src/components/StatusPanel.tsx`": [
+      {
+        "executionId": "2e4cec68-80e4-4318-b1ec-7e4902323464",
+        "chatSessionId": "sess_9484265b-23c0-45cc-b231-2b75cd8ab232",
+        "timestamp": 1786388470760
+      },
+      {
+        "executionId": "2e4cec68-80e4-4318-b1ec-7e4902323464",
+        "chatSessionId": "sess_9484265b-23c0-45cc-b231-2b75cd8ab232",
+        "timestamp": 1786390572631
+      },
+      {
+        "executionId": "2e4cec68-80e4-4318-b1ec-7e4902323464",
+        "chatSessionId": "sess_9484265b-23c0-45cc-b231-2b75cd8ab232",
+        "timestamp": 1786392249667
+      }
+    ],
+    "6.4 Create `src/components/StartStopButton.tsx`": [
+      {
+        "executionId": "2e4cec68-80e4-4318-b1ec-7e4902323464",
+        "chatSessionId": "sess_9484265b-23c0-45cc-b231-2b75cd8ab232",
+        "timestamp": 1786388470808
+      },
+      {
+        "executionId": "2e4cec68-80e4-4318-b1ec-7e4902323464",
+        "chatSessionId": "sess_9484265b-23c0-45cc-b231-2b75cd8ab232",
+        "timestamp": 1786390573513
+      },
+      {
+        "executionId": "2e4cec68-80e4-4318-b1ec-7e4902323464",
+        "chatSessionId": "sess_9484265b-23c0-45cc-b231-2b75cd8ab232",
+        "timestamp": 1786392250321
+      }
+    ],
+    "7. Checkpoint — unit tests and builds must pass": [
+      {
+        "executionId": "2e4cec68-80e4-4318-b1ec-7e4902323464",
+        "chatSessionId": "sess_9484265b-23c0-45cc-b231-2b75cd8ab232",
+        "timestamp": 1786388470860
+      },
+      {
+        "executionId": "2e4cec68-80e4-4318-b1ec-7e4902323464",
+        "chatSessionId": "sess_9484265b-23c0-45cc-b231-2b75cd8ab232",
+        "timestamp": 1786392490506
+      }
+    ],
+    "8.1 Set up App state, refs, and hook instantiation": [
+      {
+        "executionId": "2e4cec68-80e4-4318-b1ec-7e4902323464",
+        "chatSessionId": "sess_9484265b-23c0-45cc-b231-2b75cd8ab232",
+        "timestamp": 1786388470909
+      }
+    ],
+    "8.2 Implement `startAll()` and `stopAll()`": [
+      {
+        "executionId": "2e4cec68-80e4-4318-b1ec-7e4902323464",
+        "chatSessionId": "sess_9484265b-23c0-45cc-b231-2b75cd8ab232",
+        "timestamp": 1786388470965
+      }
+    ],
+    "8.3 Implement the `requestAnimationFrame` tick loop": [
+      {
+        "executionId": "2e4cec68-80e4-4318-b1ec-7e4902323464",
+        "chatSessionId": "sess_9484265b-23c0-45cc-b231-2b75cd8ab232",
+        "timestamp": 1786388471019
+      }
+    ],
+    "8.4 Implement `StatusPanel` status derivation and error display": [
+      {
+        "executionId": "2e4cec68-80e4-4318-b1ec-7e4902323464",
+        "chatSessionId": "sess_9484265b-23c0-45cc-b231-2b75cd8ab232",
+        "timestamp": 1786388471068
+      }
+    ],
+    "8.5 Add `useEffect` cleanup and unmount disposal": [
+      {
+        "executionId": "2e4cec68-80e4-4318-b1ec-7e4902323464",
+        "chatSessionId": "sess_9484265b-23c0-45cc-b231-2b75cd8ab232",
+        "timestamp": 1786388471114
+      }
+    ],
+    "9.1 Add browser feature detection and user-facing messages": [
+      {
+        "executionId": "2e4cec68-80e4-4318-b1ec-7e4902323464",
+        "chatSessionId": "sess_9484265b-23c0-45cc-b231-2b75cd8ab232",
+        "timestamp": 1786388471218
+      }
+    ],
+    "9.2 Verify and enforce keyboard navigation and ARIA attributes": [
+      {
+        "executionId": "2e4cec68-80e4-4318-b1ec-7e4902323464",
+        "chatSessionId": "sess_9484265b-23c0-45cc-b231-2b75cd8ab232",
+        "timestamp": 1786388471267
+      }
+    ],
+    "10.1 Write property-based test for `HandTrackingResult` serialisation round-trip": [
+      {
+        "executionId": "2e4cec68-80e4-4318-b1ec-7e4902323464",
+        "chatSessionId": "sess_9484265b-23c0-45cc-b231-2b75cd8ab232",
+        "timestamp": 1786388471324
+      }
+    ],
+    "11. Final checkpoint — all tests pass, build is clean": [
+      {
+        "executionId": "2e4cec68-80e4-4318-b1ec-7e4902323464",
+        "chatSessionId": "sess_9484265b-23c0-45cc-b231-2b75cd8ab232",
+        "timestamp": 1786388471373
+      }
+    ],
+    "2. Define shared TypeScript types in `src/types.ts`": [
+      {
+        "executionId": "2e4cec68-80e4-4318-b1ec-7e4902323464",
+        "chatSessionId": "sess_9484265b-23c0-45cc-b231-2b75cd8ab232",
+        "timestamp": 1786389733109
+      }
+    ],
+    "3. Implement pure utility functions in `src/utils/controllers.ts`": [
+      {
+        "executionId": "2e4cec68-80e4-4318-b1ec-7e4902323464",
+        "chatSessionId": "sess_9484265b-23c0-45cc-b231-2b75cd8ab232",
+        "timestamp": 1786390055762
+      }
+    ],
+    "6. Implement presentational React components": [
+      {
+        "executionId": "2e4cec68-80e4-4318-b1ec-7e4902323464",
+        "chatSessionId": "sess_9484265b-23c0-45cc-b231-2b75cd8ab232",
+        "timestamp": 1786392250409
+      }
+    ],
+    "5. Implement the `useHarmoniumSynth` custom hook in `src/hooks/useHarmoniumSynth.ts`": [
+      {
+        "executionId": "2e4cec68-80e4-4318-b1ec-7e4902323464",
+        "chatSessionId": "sess_9484265b-23c0-45cc-b231-2b75cd8ab232",
+        "timestamp": 1786392384303
+      }
+    ],
+    "4. Implement the `useHandTracking` custom hook in `src/hooks/useHandTracking.ts`": [
+      {
+        "executionId": "2e4cec68-80e4-4318-b1ec-7e4902323464",
+        "chatSessionId": "sess_9484265b-23c0-45cc-b231-2b75cd8ab232",
+        "timestamp": 1786392460265
+      }
+    ]
+  }
+}
